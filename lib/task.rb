@@ -20,7 +20,7 @@ class Task
         description = task.fetch("description")
         #pull out the id.
         list_id = task.fetch("list_id").to_i()
-          # create a new Task object and push it into our tasks array
+          # create a new Task object and push it into our tasks array.
         tasks.push(Task.new({:description => description, :list_id => list_id}))
       end
       tasks
