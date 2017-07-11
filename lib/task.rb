@@ -36,7 +36,7 @@ class Task
       @@all_tasks = []
     end
 
-    #making two objects with same description be treated as the same
+    #making two objects with same description be treated as the same.
     define_method(:==) do |another_task|
       self.description().==(another_task.description())
     end
