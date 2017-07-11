@@ -31,7 +31,7 @@ class Task
       DB.exec("INSERT INTO tasks (description, list_id) VALUES ('#{@description}', '#{@list_id}');")
     end
 
-    #class method to clear tasks from array
+    #class method to clear tasks from array.
     define_singleton_method(:clear) do
       @@all_tasks = []
     end
