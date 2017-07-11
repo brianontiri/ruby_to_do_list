@@ -1,5 +1,5 @@
 class Task
-    #attribute reader
+    #attribute reader.
     attr_reader(:description, :list_id)
 
     #To create an initialize method
