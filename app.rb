@@ -8,7 +8,7 @@ require("pg")
 # DB = PG.connect({:dbname => "to_do"})
 # DB = PG.connect({:dbname => "to_do_test"})
   get("/") do
-    #an instance variable to hold our list of tasks returned from the class method Task.all()
+    #an instance variable to hold our list of tasks returned from the class method Task.all().
     @tasks = Task.all()
     erb(:index)
   end
@@ -30,7 +30,7 @@ require("pg")
     erb(:success)
    end
 
-#get request to show all the lists
+#get request to show all the lists.
    get('/lists') do
     @lists = List.all()
     erb(:lists)
