@@ -3,7 +3,7 @@ require('capybara/rspec')
   Capybara.app = Sinatra::Application
   set(:show_exceptions, false)
 
-  #Intergration test to add a new list
+  #Intergration test to add a new list.
   describe('adding a new list', {:type => :feature}) do
     it('allows a user to click a list to see the tasks and details for it') do
       visit('/')
