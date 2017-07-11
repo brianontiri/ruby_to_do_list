@@ -42,7 +42,7 @@ require("pg")
     erb(:list)
   end
 
-#post request to post description and id for a new task created
+#post request to post description and id for a new task created.
   post("/tasks") do
     description = params.fetch("description")
     list_id = params.fetch("list_id").to_i()
