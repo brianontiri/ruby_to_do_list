@@ -1,4 +1,4 @@
-#require the same files and gems
+#require the same files and gems.
 require("rspec")
   require("pg")
   require("list")
