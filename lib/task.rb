@@ -10,7 +10,7 @@ class Task
 
     #class method to give all tasks.
     define_singleton_method(:all) do
-    #selecting all of the tasks from the tasks table in our database
+    #selecting all of the tasks from the tasks table in our database.
       returned_tasks = DB.exec("SELECT * FROM tasks;")
     #empty array to store tasks
       tasks = []
