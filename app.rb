@@ -22,7 +22,7 @@ require("pg")
     erb(:list_form)
   end
 
-#post requiest to get name of new list and route to success page
+#post requiest to get name of new list and route to success page.
   post("/lists") do
     name = params.fetch("name")
     list = List.new({:name => name, :id => nil})
