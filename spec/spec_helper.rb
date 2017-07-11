@@ -4,7 +4,7 @@ require("rspec")
   require("list")
   require("task")
 
-#create a database connection
+#create a database connection.
   DB = PG.connect({:dbname => "to_do_test"})
 
 #set up RSpec to clean the database between test runs
