@@ -7,7 +7,7 @@ require("rspec")
 #create a database connection.
   DB = PG.connect({:dbname => "to_do_test"})
 
-#set up RSpec to clean the database between test runs
+#set up RSpec to clean the database between test runs.
   RSpec.configure do |config|
     config.after(:each) do
       DB.exec("DELETE FROM lists *;")
