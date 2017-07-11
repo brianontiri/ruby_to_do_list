@@ -14,7 +14,7 @@ class Task
       returned_tasks = DB.exec("SELECT * FROM tasks;")
     #empty array to store tasks.
       tasks = []
-    #loop through each of those tasks
+    #loop through each of those tasks.
       returned_tasks.each() do |task|
         #pull out the description
         description = task.fetch("description")
