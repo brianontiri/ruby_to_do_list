@@ -36,7 +36,7 @@ require("pg")
     erb(:lists)
   end
 
-#get request to view specific list
+#get request to view specific list.
   get("/lists/:id") do
     @list = List.find(params.fetch("id").to_i())
     erb(:list)
