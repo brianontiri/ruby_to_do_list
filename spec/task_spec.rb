@@ -19,7 +19,7 @@ require("spec_helper")
       end
     end
 
-    #save method that adds a new task
+    #save method that adds a new task.
     describe("#save") do
     it("adds a task to the array of saved tasks") do
       test_task = Task.new({:description => "learn SQL", :list_id => 1})
