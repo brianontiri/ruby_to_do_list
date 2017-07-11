@@ -17,7 +17,7 @@ require("pg")
     erb(:new_task)
   end
 
-#route to new list form
+#route to new list form.
   get("/lists/new") do
     erb(:list_form)
   end
