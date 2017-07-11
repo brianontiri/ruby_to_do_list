@@ -16,7 +16,7 @@ class Task
       tasks = []
     #loop through each of those tasks.
       returned_tasks.each() do |task|
-        #pull out the description
+        #pull out the description.
         description = task.fetch("description")
         #pull out the id
         list_id = task.fetch("list_id").to_i()
