@@ -8,7 +8,7 @@ class Task
       @list_id = attributes.fetch(:list_id)
     end
 
-    #class method to give all tasks
+    #class method to give all tasks.
     define_singleton_method(:all) do
     #selecting all of the tasks from the tasks table in our database
       returned_tasks = DB.exec("SELECT * FROM tasks;")
