@@ -14,7 +14,7 @@ require('capybara/rspec')
     end
   end
 
-  #intergration test to show all the lists
+  #intergration test to show all the lists.
   describe('viewing all of the lists', {:type => :feature}) do
     it('allows a user to see all of the lists that have been created') do
       list = List.new({:name => 'Moringaschool Homework',:id=>nil})
