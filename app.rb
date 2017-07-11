@@ -30,7 +30,7 @@ require("pg")
     erb(:success)
    end
 
-#get request to show all the lists.
+#get request to show all the lists//
    get('/lists') do
     @lists = List.all()
     erb(:lists)
