@@ -38,7 +38,7 @@ require('capybara/rspec')
     end
   end
 
-  #interration test to add tasks to a list
+  #interration test to add tasks to a list.
   describe('adding tasks to a list', {:type => :feature}) do
     it('allows a user to add a task to a list') do
       test_list = List.new({:name => 'School stuff',:id=>nil})
