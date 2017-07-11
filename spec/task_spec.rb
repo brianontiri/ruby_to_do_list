@@ -36,7 +36,7 @@ require("spec_helper")
       end
     end
 
-    #to make two objects with the same properties are treated the same in our specs
+    #to make two objects with the same properties are treated the same in our specs.
     describe("#==") do
       it("is the same task if it has the same description and list ID") do
         task1 = Task.new({:description => "learn SQL", :list_id => 1})
