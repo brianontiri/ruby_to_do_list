@@ -4,7 +4,7 @@ require("spec_helper")
   #To clear things out before each spec run.
   describe(Task) do
 
-    #Test method for giving all tasks when empty
+    #Test method for giving all tasks when empty.
     describe(".all") do
       it("is empty at first") do
         expect(Task.all()).to(eq([]))
