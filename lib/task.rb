@@ -26,7 +26,7 @@ class Task
       tasks
     end
 
-    #instance method to save a new task
+    #instance method to save a new task.
     define_method(:save) do
       DB.exec("INSERT INTO tasks (description, list_id) VALUES ('#{@description}', '#{@list_id}');")
     end
