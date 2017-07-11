@@ -25,7 +25,7 @@ require('capybara/rspec')
     end
   end
 
-  #intergration test to see task details for a single list
+  #intergration test to see task details for a single list.
   describe('seeing details for a single list', {:type => :feature}) do
     it('allows a user to click a list to see the tasks and details for it') do
       test_list = List.new({:name => 'School stuff',:id=>nil})
