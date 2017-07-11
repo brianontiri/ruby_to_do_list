@@ -11,7 +11,7 @@ require("spec_helper")
       end
     end
 
-    #Test to give description
+    #Test to give description.
     describe("#description") do
       it("lets you read the description out") do
         test_task = Task.new({:description => "learn SQL", :list_id => 1})
