@@ -19,7 +19,7 @@ class List
 
     define_method(:save) do
       result = DB.exec("INSERT INTO lists (name) VALUES ('#{@name}') RETURNING id;")
-        #first() is used to get the ID of the list and fetch() to select the ID
+        #first() is used to get the ID of the list and fetch() to select the ID.
       @id = result.first().fetch("id").to_i()
     end
 
