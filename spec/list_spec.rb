@@ -1,4 +1,4 @@
-#all files required from spec_helper.rb
+#all files required from spec_helper.rb.
 require("spec_helper")
 
   describe(List) do
