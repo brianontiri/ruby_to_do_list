@@ -2,7 +2,7 @@ class Task
     #attribute reader.
     attr_reader(:description, :list_id)
 
-    #To create an initialize method
+    #To create an initialize method.
     define_method(:initialize) do |attributes|
       @description = attributes.fetch(:description)
       @list_id = attributes.fetch(:list_id)
