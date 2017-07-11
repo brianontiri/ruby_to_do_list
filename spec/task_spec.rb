@@ -1,7 +1,7 @@
 #all files required from spec_helper.rb.
 require("spec_helper")
 
-  #To clear things out before each spec run
+  #To clear things out before each spec run.
   describe(Task) do
 
     #Test method for giving all tasks when empty
